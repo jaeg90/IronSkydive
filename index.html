@@ -55,7 +55,7 @@
         <a class="link-btn" href="#">Register</a>
       </article>
     </section>
-    <section id="structure">
+    <section id="structure" class="container">
       <h3>How do we structure the the day?</h3>
       <div>
         <article class="service-box container">
@@ -177,6 +177,42 @@
         </tbody>
       </table>
       <h3>Schedule a Time Slot</h3>
+      <form class="slot-form" action="/register" method="post">
+        <div class="slot-form-container">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="slot-form-container">
+          <label for="Participants">Number of participants</label>
+          <input
+            type="number"
+            name="participants"
+            id="participants"
+            placeholder="Number of participants
+        "
+          />
+        </div>
+        <div class="slot-form-container">
+          <label for="Date">Date</label>
+          <input type="date" name="date" id="date" />
+        </div>
+        <div class="slot-form-container">
+          <label for="Time">Time</label>
+          <select name="time" id="time">
+            <option value="early">9:00 - 11:00</option>
+            <option value="mid">12:00 - 14:00</option>
+            <option value="late">15:00 - 17:00</option>
+          </select>
+        </div>
+        <div class="slot-form-container">
+          <button type="submit">Reserve Your Slot!</button>
+        </div>
+      </form>
     </section>
     <footer class="dark-background footer">
       <section>
